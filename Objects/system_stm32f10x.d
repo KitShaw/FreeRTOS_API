@@ -5,7 +5,7 @@
 .\objects\system_stm32f10x.o: Lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\objects\system_stm32f10x.o: .\User\stm32f10x_conf.h
 .\objects\system_stm32f10x.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
-.\objects\system_stm32f10x.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h
+.\objects\system_stm32f10x.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\system_stm32f10x.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h
 .\objects\system_stm32f10x.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h
 .\objects\system_stm32f10x.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h

@@ -5,12 +5,12 @@
 .\objects\event_groups.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\event_groups.o: .\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\event_groups.o: .\Hal\system.h
-.\objects\event_groups.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h
+.\objects\event_groups.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\event_groups.o: .\Lib\CMSIS\CM3\CoreSupport\core_cm3.h
-.\objects\event_groups.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\system_stm32f10x.h
+.\objects\event_groups.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
 .\objects\event_groups.o: .\User\stm32f10x_conf.h
 .\objects\event_groups.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
-.\objects\event_groups.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h
+.\objects\event_groups.o: d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\event_groups.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h
 .\objects\event_groups.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h
 .\objects\event_groups.o: .\Lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h

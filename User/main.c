@@ -116,9 +116,45 @@ void echo_task(void *pv)    //任务函数
 //query任务函数
 void query_task(void *pvParameters)
 {	
+	u32 TotalRunTime;
+	UBaseType_t ArraySize,x;
+	TaskStatus_t *StatusArray;
+	
+	//第一步：函数uxTaskGetSystemState()的使用
+	printf("/********第一步：函数uxTaskGetSystemState()的使用**********/\r\n");
+	ArraySize=uxTaskGetNumberOfTasks();		//获取系统任务数量
+	StatusArray=pvPortMalloc(ArraySize*sizeof(TaskStatus_t));//申请内存
+	if(StatusArray!=NULL)					//内存申请成功
+	{
+		ArraySize=uxTaskGetSystemState((TaskStatus_t* 	)StatusArray, 	//任务信息存储数组
+									   (UBaseType_t		)ArraySize, 	//任务信息存储数组大小
+								       (uint32_t*		)&TotalRunTime);//保存系统总的运行时间
+		printf("TaskName\t\tPriority\t\tTaskNumber\t\t\r\n");
+		for(x=0;x<ArraySize;x++)
+		{
+			//通过串口打印出获取到的系统任务的有关信息，比如任务名称、
+			//任务优先级和任务编号。
+			printf("%s\t\t%d\t\t\t%d\t\t\t\r\n",				
+					StatusArray[x].pcTaskName,
+					(int)StatusArray[x].uxCurrentPriority,
+					(int)StatusArray[x].xTaskNumber);
+			
+		}
+	}	
+
+
+	vPortFree(StatusArray);	//释放内存
+	printf("/**************************结束***************************/\r\n");
+	printf("按下KEY_UP键继续!\r\n\r\n\r\n");
+	//while(KEY_Scan(0)!=WKUP_PRES) delay_ms(10);		//等待KEY_UP键按下
+
 	while(fgetc(stdin) == 'i') delay_ms(10);					//等待KEY_UP键按下
 	fputc('i',stdout);
 	
+	
+	while(fgetc(stdin) == 'i') delay_ms(10);					//等待KEY_UP键按下
+	fputc('i',stdout);
+
 	while(1)
 	{
 		//LED1=!LED1;
