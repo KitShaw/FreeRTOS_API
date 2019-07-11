@@ -1,0 +1,27 @@
+
+T2094 000:271 SEGGER J-Link V4.96d Log File (0001ms, 0257ms total)
+T2094 000:271 DLL Compiled: Jan 29 2015 11:45:37 (0001ms, 0257ms total)
+T2094 000:271 Logging started @ 2019-07-07 11:30 (0001ms, 0257ms total)
+T2094 000:272 JLINK_SetWarnOutHandler(...) (0000ms, 0257ms total)
+T2094 000:272 JLINK_OpenEx(...)
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N: 20080643
+Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull  returns O.K. (0263ms, 0520ms total)
+T2094 000:535 JLINK_SetErrorOutHandler(...) (0000ms, 0520ms total)
+T2094 000:535 JLINK_ExecCommand("ProjectFile = "E:\git\RTOS\FreeRTOS_list\JLinkSettings.ini"", ...)  returns 0x00 (0001ms, 0521ms total)
+T2094 000:540 JLINK_ExecCommand("Device = STM32F103ZE", ...)Device "STM32F103ZE" selected.  returns 0x00 (0006ms, 0527ms total)
+T2094 000:546 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x01 (0000ms, 0527ms total)
+T2094 000:546 JLINK_GetHardwareVersion()  returns 0x13880 (0000ms, 0527ms total)
+T2094 000:546 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0527ms total)
+T2094 000:546 JLINK_GetFirmwareString(...) (0000ms, 0527ms total)
+T2094 000:559 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0527ms total)
+T2094 000:559 JLINK_GetCompileDateTime() (0000ms, 0527ms total)
+T2094 000:562 JLINK_GetFirmwareString(...) (0000ms, 0527ms total)
+T2094 000:567 JLINK_GetHardwareVersion()  returns 0x13880 (0000ms, 0527ms total)
+T2094 000:578 JLINK_TIF_Select(JLINKARM_TIF_JTAG)  returns 0x00 (0003ms, 0530ms total)
+T2094 000:581 JLINK_SetSpeed(20000) (0000ms, 0530ms total)
+T2094 000:581 JLINK_GetIdData(...) (0001ms, 0531ms total)
+T2094 002:905 JLINK_Close() (0001ms, 0532ms total)
+T2094 002:905  (0001ms, 0532ms total)
+T2094 002:905 Closed (0001ms, 0532ms total)
